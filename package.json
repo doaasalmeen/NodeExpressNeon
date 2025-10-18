@@ -1,0 +1,26 @@
+{
+  "name": "nodeexpressneon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doaasalmeen/NodeExpressNeon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/doaasalmeen/NodeExpressNeon/issues"
+  },
+  "homepage": "https://github.com/doaasalmeen/NodeExpressNeon#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  }
+}
