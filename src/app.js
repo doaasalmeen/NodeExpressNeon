@@ -6,10 +6,11 @@ import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
+import securityMiddleware from '#middleware/security.middleware.js';
 dotenv.config();
 
 const app = express();
-
+app.use(securityMiddleware);
 app.use(helmet());
 
 app.use(cors());
