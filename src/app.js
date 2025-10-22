@@ -1,5 +1,6 @@
 import express from 'express';
 import authRoutes from '#routes/auth.routes.js';
+import userRoutes from '#routes/user.routes.js';
 import logger from '#config/logger.js';
 import helmet from 'helmet';
 import morgan from 'morgan';
@@ -32,13 +33,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-  res
-    .status(200)
-    .json({
-      status: 'ok',
-      timestamp: new Date().toISOString(),
-      uptime: process.uptime(),
-    });
+  res.status(200).json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+  });
 });
 
 app.get('/api', (req, res) => {
@@ -46,5 +45,6 @@ app.get('/api', (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/user', userRoutes);
 
 export default app;

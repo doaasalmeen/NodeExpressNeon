@@ -1,6 +1,4 @@
-// import {jwt, verify} from 'jsonwebtoken';
 import logger from '#config/logger.js';
-// src/utils/jwt.js
 import pkg from 'jsonwebtoken';
 const { sign, verify } = pkg;
 
