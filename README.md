@@ -1,0 +1,7 @@
+- **Node.js + Express + Neon PostgreSQL** stack
+- **JWT authentication** with access/refresh tokens
+- **Drizzle ORM** for database management
+- **Security features** (Helmet, CORS, Arcjet, bcrypt)
+- **Clean architecture** (controllers, services, models separation)
+- **Available commands** like `npm run dev`, `npm run db:migrate`, etc.
+- **Setup instructions** for `.env` and database
